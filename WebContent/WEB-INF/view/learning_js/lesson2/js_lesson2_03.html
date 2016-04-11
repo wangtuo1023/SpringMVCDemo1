@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<head>
+<title>js第2课-初识函数-03-网页换肤</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="这是js第2课-初识函数-03-网页换肤">
+<style>
+</style>
+<link id="link1" rel="stylesheet" type="text/css" href="">
+<script type="text/javascript">
+	function skin1() {
+		var oL = document.getElementById('link1');
+		oL.href = "css/lesson2_03_page_skin_01.css";
+	}
+
+	function skin2() {
+		var oL = document.getElementById('link1');
+		oL.href = "css/lesson2_03_page_skin_02.css";
+	}
+</script>
+</head>
+
+<body>
+	<input type="button" value="皮肤1" onclick="skin1()">
+	<input type="button" value="皮肤2" onclick="skin2()">
+</body>
+
+</html>

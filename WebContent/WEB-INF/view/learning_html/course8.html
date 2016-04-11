@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<head>
+<title>第8课 实战首页布局</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content=" HTML页面">
+<style>
+#container {
+	width: 1002px;
+	/* height: 300px; */
+	background: red;
+}
+
+#header {
+	height: 120px;
+	background: orange;
+}
+
+#main {
+	height: 600px;
+	background: green;
+}
+
+#lside {
+	width: 700px;
+	height: 600px;
+	float: left;
+	background: pink;
+}
+
+#rside {
+	width: 302px;
+	height: 600px;
+	float: right;
+	background: purple;
+}
+
+#footer {
+	height: 120px;
+	background: blue;
+}
+</style>
+</head>
+
+<body>
+	<!-- 总div下边分3个 -->
+	<div id="container">
+		container
+		<div id="header">header</div>
+		<div id="main">main
+			<div id="lside">lside</div>
+			<div id="rside">rside</div>
+		</div>
+		<div id="footer">footer</div>
+	</div>
+</body>
+</html>

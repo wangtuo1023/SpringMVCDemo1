@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<head>
+<title>js第3课-01-函数传参</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="这是js第3课-01-函数传参">
+
+<style type="text/css">
+#div1 {
+	width: 200px;
+	height: 200px;
+	background: red;
+}
+</style>
+
+<script type="text/javascript">
+	function showNumber(number1, number2) {
+		alert(number1 + number2);
+	}
+
+	/* 修改颜色*/
+	function changeColor(color) {
+		var div1 = document.getElementById("div1");
+		div1.style.background = color;
+	}
+
+	function toGreeen() {
+		var div1 = document.getElementById("div1");
+		div1.style.background = "green";
+	}
+	function toYellow() {
+		var div1 = document.getElementById("div1");
+		div1.style.background = "yellow";
+	}
+	function toBlack() {
+		var div1 = document.getElementById("div1");
+		div1.style.background = "black";
+	}
+</script>
+
+</head>
+
+<body>
+	<!-- <input type="button" value="变为绿色" onclick="toGreeen()"> -->
+	<!-- <input type="button" value="变为黄色" onclick="toYellow()"> -->
+	<!-- <input type="button" value="变为黑色" onclick="toBlack()"> -->
+	<input type="button" value="变为绿色" onclick="changeColor('green')">
+	<input type="button" value="变为黄色" onclick="changeColor('yellow')">
+	<input type="button" value="变为黑色" onclick="changeColor('black')">
+	<input type="button" value="显示数字" onclick="showNumber(6,9)">
+	<div id="div1"></div>
+</body>
+
+</html>
