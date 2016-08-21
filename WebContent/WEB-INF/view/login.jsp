@@ -12,7 +12,7 @@
 	<h3>用户登录</h3>
 	${ fail_key }
 	<br />
-	<form action="<%=request.getContextPath() %>/saveLogin.htm"
+	<form action="<%=request.getContextPath()%>/saveLogin.htm"
 		method="post">
 		<!-- 怎样将user_name属性也赋值给其他对象？ -->
 		用户名 :<input type="text" name="wb10UserBasicInfo.user_name"><br />
@@ -23,7 +23,8 @@
 
 	<br />
 
+	<!-- 2016.08.21 由 /usrmgn/signup.jsp 修改为 signup.htm ，之后就可以正常跳转了。 -->
 	<a href="javascript:void(0);"
-		onclick="javascript:self.location='<%=request.getContextPath() %>/usermgr/signup.html'">注册</a>
+		onclick="javascript:self.location='<%=request.getContextPath()%>/signup.htm'">注册aabbcc</a>
 </body>
 </html>
